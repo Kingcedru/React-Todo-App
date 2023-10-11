@@ -1,14 +1,13 @@
 import { useState } from 'react'
-
-import './App.css'
+import CreateNote from './components/createNote'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <h1 className="text-3xl font-bold underline text-blue-500">
-      Hello world!
-    </h1>
+    <div className='flex'>
+      <CreateNote/>
+    </div>
   )
 }
 
